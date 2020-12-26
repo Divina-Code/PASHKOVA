@@ -1,2 +1,2 @@
-print('Hellow world')
-print('Good buy')
+print('Hello world')
+print('Good bye')
