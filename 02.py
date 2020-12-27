@@ -5,8 +5,7 @@ print('Hello', name,'in your name',len(name),'letters')
 
 
 year= input('When you was born?'  )
-if (len(str(year)) == 4):
-
+if len(str(year)) == 4:
     print('nice year', year)
     print('Your age', 2020-int(year))
 else:
