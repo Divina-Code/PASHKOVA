@@ -5,7 +5,7 @@ print('Hello', name)
 year= input('When you was born?'  )
 print('Your age', 2020-int(year))
 
-if len(str(year))>18:
+if 2020-int(year)> 18:
     print('Посмотрите боевик')
 else:
     print('Посмотрите комедию')
