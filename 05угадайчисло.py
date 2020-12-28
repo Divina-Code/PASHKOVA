@@ -1,13 +1,13 @@
 import random
 number = random.randrange(-10, 10)
-input(number)
+
 
 isGuassed = False
 while isGuassed != True:
     usernumber=input('Введите число')
 
     if int(usernumber)> number:
-        print('Ваше число больше, попробуйте еще раз')
+        print('Ваше число больше, попробуйте ещ89е раз')
     elif int(usernumber)< number:
         print('Ваше число меньше, попробуйте еще раз')
     else:
