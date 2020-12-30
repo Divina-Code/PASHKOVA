@@ -1,6 +1,5 @@
 print('Добро пожаловать в игру! ')
-
-word  = 'АНТАРКТИДА'
+word  = 'АЛЛОТРОПИЯ'
 
 letters = []
 for a in word:
@@ -28,6 +27,9 @@ while stop == False:
     if lives == 1:
         stop = True
         print('Вы проиграли! Попробуйте еще раз.')
+    if list(word) == letters:
+        print('Да! Вы угадали слово!')
+        stop = True
 
     lives += -1
 
