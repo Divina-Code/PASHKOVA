@@ -24,12 +24,16 @@ while stop == False:
         for i in range(len(word)):
             if answer == word[i]:
                 letters[i] = word[i]
+
+        if list(word) == letters:
+            print('Да! Вы угадали слово!')
+            stop = True
+
     if lives == 1:
         stop = True
         print('Вы проиграли! Попробуйте еще раз.')
-    if list(word) == letters:
-        print('Да! Вы угадали слово!')
-        stop = True
+
+
 
     lives += -1
 
@@ -38,7 +42,9 @@ while stop == False:
     if stop == False:
         if lives > 4:
             print('У вас осталось', lives, 'попыток\n')
-        else:
+        elif 1<lives<4:
             print('У вас осталось', lives, 'попытки\n')
+        else:
+            print('У вас осталось', lives, 'попытка\n')
 
 print('Спасибо за игру!')
